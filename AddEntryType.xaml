@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp1.AddEntryType"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="AddEntryType" Height="127" Width="201" MinHeight="127" MinWidth="201">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Label Content="Введите тип добавляемой записи" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="26" Width="196"/>
+        <TextBox x:Name="tb" TextWrapping="NoWrap" VerticalAlignment="Center" Grid.Row="1" Height="18" TextChanged="TextBox_TextChanged" Margin="2,0,3,0"/>
+        <Button x:Name="btn" Content="Добавить новый тип" Margin="41,4,42,0" Grid.Row="2" VerticalAlignment="Top" Height="auto" Width="auto" Click="btn_Click"/>
+
+    </Grid>
+</Window>
